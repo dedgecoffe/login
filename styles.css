@@ -86,3 +86,16 @@ body::nth-of-type(4)::after {
     z-index: 1;
     animation: moveText 20s linear infinite, randomPosition 10s infinite;
 }
+
+/* Animasi teks bergerak */
+@keyframes moveText {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(20px) translateY(20px); /* Gerakan teks lebih besar */
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
