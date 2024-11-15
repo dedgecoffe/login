@@ -29,3 +29,18 @@ body {
         background-position: 0 0;
     }
 }
+
+/* Teks EdgeCoffee tersebar secara acak */
+body::before {
+    content: "EdgeCoffee";
+    position: absolute;
+    top: 10%; /* Posisi acak */
+    left: 30%; /* Posisi acak */
+    font-size: 3rem; /* Ukuran font */
+    color: rgb(131, 69, 41);
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    animation: moveText 20s linear infinite, randomPosition 10s infinite; /* Animasi teks yang bergerak */
+}
