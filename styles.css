@@ -1,0 +1,18 @@
+/* Gaya dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    position: relative;
+    background: url('bgkel.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: moveBackground 20s linear infinite; /* Animasi gerak pada gambar latar */
+}
