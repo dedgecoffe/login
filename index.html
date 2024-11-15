@@ -19,13 +19,13 @@
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
         </div>
-        <button type="submit" class="btn">Login</button>
+        <button type="submit">Login</button>
         <div class="error-message" id="error-message"></div>
     </form>
 </div>
 
 <script>
-    document.getElementsByClassName('btn').addEventListener('click', function(event) {
+    document.getElementsById('btn').addEventListener('sumbit', function(event) {
         event.preventDefault();
         
         const username = document.getElementById('username').value;
