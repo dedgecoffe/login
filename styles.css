@@ -44,3 +44,45 @@ body::before {
     z-index: 1;
     animation: moveText 20s linear infinite, randomPosition 10s infinite; /* Animasi teks yang bergerak */
 }
+
+body::after {
+    content: "EdgeCoffee";
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    font-size: 4rem; /* Ukuran font */
+    color: rgb(240, 239, 237);
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    animation: moveText 20s linear infinite, randomPosition 12s infinite; /* Animasi teks yang bergerak */
+}
+
+body::nth-of-type(3)::before {
+    content: "EdgeCoffee";
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    animation: moveText 20s linear infinite, randomPosition 8s infinite;
+}
+
+body::nth-of-type(4)::after {
+    content: "EdgeCoffee";
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    animation: moveText 20s linear infinite, randomPosition 10s infinite;
+}
